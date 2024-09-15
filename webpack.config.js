@@ -5,12 +5,12 @@ module.exports = (env, { mode }) => ({
     mode,
     entry: path.resolve(__dirname, 'src', 'index.js'),
     output: {
-        path: path.resolve(__dirname, 'build'),
+        path: path.resolve(__dirname, 'docs'),
         filename: 'bundle.js',
         clean: true
     },
     devServer: {
-        static: path.resolve(__dirname, 'build'),
+        static: path.resolve(__dirname, 'docs'),
         port: 8080,
         open: true,
     },
